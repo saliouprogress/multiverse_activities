@@ -1,4 +1,4 @@
-class CrewMember {
+s   class CrewMember {
     constructor(name = 'unknown', position = 'unknown', staffNumber = -Infinity, planeId = 'unknown') {
         this.name = name 
         this.position = position.toLowerCase() // to make sure it matches the switch cases for the provideService method
