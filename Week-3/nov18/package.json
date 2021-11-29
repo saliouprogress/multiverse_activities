@@ -1,0 +1,16 @@
+{
+  "name": "nov18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.0",
+    "sequelize": "^6.12.0-alpha.1",
+    "sqlite3": "^4.2.0"
+  }
+}
