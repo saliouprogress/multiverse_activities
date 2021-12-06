@@ -1,1 +1,1 @@
-# multiverse_activities is where I store all of the files that I am using for my bootcamp
+# multiverse_activities is where I store all of the files that I am using for my bootcamp at Mutiverse and Google.
