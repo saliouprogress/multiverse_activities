@@ -1,0 +1,19 @@
+{{>header}}
+
+<div>
+	<h1>{{restaurant.name}}</h1>
+	<img class="item-img" src="{{restaurant.image}}" /><br>
+	<a class="btn" href="/restaurants/{{restaurant.id}}/menus">See Menu List</a>
+</div>
+
+{{>footer}}
+
+
+{{!-- <section>
+    {{#each restaurants}}
+        <article>
+            <img src="{{this.image}}"/>
+            <h2>{{this.name}}</h2>
+        </article>
+    {{/each}}
+</section> --}}
