@@ -1,0 +1,56 @@
+.admin-header {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 100px;
+}
+.adminView-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 16% 16% 16% 16%;
+    align-content:space-evenly;
+    margin-bottom: 120px;
+}
+.image-container {
+    /* margin-top: 60px; */
+    margin-bottom: 100px;
+    color: white;
+    font-size: 20px;
+    max-height: 6500%;
+    max-width: 100%;
+    
+}
+
+.image-container img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    height: 350px;
+    width: 350px;
+    /* margin-bottom: 15px; */
+}
+.image-container img:hover {
+    box-shadow: 0 0 2px 5px rgba(236, 111, 9, 0.5);
+}
+.title{
+    max-width: 350px;
+    height: 60;
+    margin: 0;
+}
+.description{
+    max-width: 350px;
+    height: 75;
+    margin: 0;
+}
+.price{
+    max-width: 350px;
+    height: 40;
+    margin: 0;
+    font-size: 20px;
+}
+.sale{
+    max-width: 350px;
+    height: 40;
+    margin: 0;
+}

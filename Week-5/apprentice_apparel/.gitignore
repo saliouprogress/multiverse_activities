@@ -1,0 +1,4 @@
+.DS_Store
+node_modules
+ApprenticeApparel.sqlite
+/db/*.sqlite3

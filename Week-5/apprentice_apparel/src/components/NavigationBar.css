@@ -1,0 +1,46 @@
+
+nav{
+    position: sticky;
+    overflow: auto;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #131e30;
+    width: 100%;
+    border-bottom: 3px solid #56585c;
+    z-index: 100;
+    
+
+}
+
+.logo img{
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    margin-left: 20px;
+    background-image: url('https://raw.githubusercontent.com/cesarsnina/apprentice_apparel/main/Screenshot%202021-12-04%2010.39.28%20AM.png?token=ANSATKRXGK6KYUP3MRSIKVTBVZY2Y');
+    background-size: cover;
+    
+}
+
+.nav-ul {
+    list-style: none;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 8px;
+    
+}
+
+.nav-ul li {
+    display: inline-block;
+    margin-left: 220px;
+    font-size: 30px;
+    color: #d2a561;
+   
+}
+.cart-style{
+    font-size: 50px;
+    position: absolute;
+    margin-top: 5px;
+}

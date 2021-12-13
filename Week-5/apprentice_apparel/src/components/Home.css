@@ -1,0 +1,33 @@
+/* .parent-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+} */
+
+
+
+.categories-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    
+}
+
+.image-p-container img{
+    margin-right: 30px;
+    height: 400px;
+    width: 450px;
+    object-fit:fill;
+}
+
+.image-p-container p {
+    color: white;
+    font-size:22px;
+}

@@ -1,0 +1,11 @@
+body {
+    background-color: #131e30;
+}
+
+.app-ontainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+

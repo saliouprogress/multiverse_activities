@@ -1,0 +1,29 @@
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.description{
+    color: white;
+}
+.itemcontainer img{
+    width: 100%;
+}
+.itemcontainer {
+    padding-top: 100px;
+    padding-left: 400px;
+    width: 130%;
+}
+.updateButton{
+    background-color: black;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+

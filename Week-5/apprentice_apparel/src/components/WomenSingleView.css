@@ -1,0 +1,17 @@
+.container2{
+    color: white;
+    margin-top: 90px;
+    margin-left: 180px;
+    
+}
+
+.container2 img {
+    height: 700px;
+    width: 700px;
+    object-fit:fill;
+}
+
+.container2 p {
+    margin-top: 15px;
+    font-size: 22px;
+}

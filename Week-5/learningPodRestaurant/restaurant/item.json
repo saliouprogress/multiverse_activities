@@ -1,9 +1,0 @@
-{
-    "item": [
-        { "name": "Breadsticks", "price": "3.99", "menu_id": 1 },
-        { "name": "Calamari", "price": "11.79", "menu_id": 1  },
-        { "name": "Fried Mozzarella", "price": "7.79", "menu_id": 2  },
-        { "name": "Shrimp Scampi", "price": "19.99", "menu_id": 3  },
-        { "name": "Cheese Ravioli", "price": "15.99", "menu_id": 3  }
-    ]
-}

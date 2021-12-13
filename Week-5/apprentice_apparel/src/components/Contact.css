@@ -1,0 +1,31 @@
+.contact-wrapper {
+    background-color: #131e30;
+}
+
+.contact-header {
+    color: #d2a561;
+    text-align: center;
+    margin-top: 15px;
+}
+
+div.card {
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    width: 286px;
+    height: 286px;
+}
+
+.github, .contact-submit {
+    background-color: black;
+    width: 100%;
+}
+
+.github:hover, .contact-submit:hover {
+    background-color: #333;
+}
+
+.github:focus, .contact-submit:focus {
+    background-color: #666;
+}

@@ -1,0 +1,17 @@
+{
+    "users": [
+        {"name": "Natalie Morales", "email": "nmorales@gmail.com", "password": "Morales", "admin": 0},
+        {"name": "Bruce Willis", "email": "brucewillis@aol.com", "password": "Morales", "admin": 0},
+        {"name": "Hiroyuki Sanada", "email": "hiroyuki5@yahoo.com", "password": "Morales", "admin": 0},
+        {"name": "Michelle Rodriguez", "email": "mrodriguez@gmail.com", "password": "Morales", "admin": 0},
+        {"name": "Morgan Freeman", "email": "morganfreeman@aol.com", "password": "Morales", "admin": 0},
+        {"name": "Ben Affleck", "email": "benaffleck@gmail.com", "password": "Morales", "admin": 0},
+        {"name": "Johnny Knoxville", "email": "johnknoxville@hotmail.com", "password": "Morales", "admin": 0},
+        {"name": "Salma Hayek", "email": "salmahayek@hotmail.com", "password": "Morales", "admin": 0},
+        {"name": "Idris Elba", "email": "idriselba15@gmail.com", "password": "Morales", "admin": 0},
+        {"name": "Tyler Perry", "email": "tylerperry@gmail.com", "password": "Morales", "admin": 1},
+        { "name": "cesar nina", "email": "cesar@apprenticeapparel.com", "password": "apprenticeapparel", "admin": 1},
+        { "name": "denille carrington", "email": "denille@apprenticeapparel.com", "password": "apprenticeapparel" , "admin": 1},
+        { "name": "serge nikiema", "email": "serge@apprenticeapparel.com", "password": "apprenticeapparel"  , "admin": 1}
+    ]
+}    
