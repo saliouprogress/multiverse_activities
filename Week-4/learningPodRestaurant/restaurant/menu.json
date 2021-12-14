@@ -1,0 +1,7 @@
+{
+    "menus": [
+        {"title": "Breakfast" },
+        {"title": "Lunch" },
+        {"title": "Dinner" }
+    ]
+}
