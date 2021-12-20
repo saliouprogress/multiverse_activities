@@ -1,0 +1,103 @@
+{{!-- {{#if valError}}
+{{#each valError}}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Error:</strong> {{this.msg}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/each}}
+{{/if}}
+  <h2>Add Meal</h2>
+  <form action='/api/meal/{{user.id}}' method='POST'>
+    <ul id='addMealFormList'>
+      <li class='AddMealListItem'>
+        <label for='name'>Meal Name</label>
+        <input type='text' id='name' name='name' class='addMealInput' required />
+      </li>
+      <li id='dateTime' class='AddMealListItem'>
+        <div class='groupRow'>
+          <div class='labelInput'>
+            <label for='date'>Date</label>
+            <input type='date' id='date' name='date' class='addMealInput' required />
+          </div>
+          <div class='labelInput'>
+            <label for='time'>Time</label>
+            <input type='time' id='time' name='time' class='addMealInput' required />
+          </div>
+        </div>
+      </li>
+      <li id='typeCalories' class='AddMealListItem'>
+        <div class='groupRow'>
+          <div class='labelInput'>
+            <label for='type'>Type</label>
+            <select id='type' name='type' class='addMealOption' required>
+              <option value='Breakfast'>Breakfast</option>
+              <option value='Lunch'>Lunch</option>
+              <option value='Snack'>Snack</option>
+              <option value='Dinner'>Dinner</option>
+            </select>
+          </div>
+          <div class='labelInput'>
+            <label for='calories'>Calories</label>
+            <input type='number' id='calories' name='calories' class='addMealInput' required />
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div id='formButtons'>
+      <button id='resetButton'>Clear</button>
+      <button type='submit'>Create</button>
+    </div>
+  </form>
+</section> --}}
+
+<div class="container">
+  {{#if valError}}
+{{#each valError}}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Error:</strong> {{this.msg}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/each}}
+{{/if}}
+  <form action='/api/meal/{{user.id}}' method='POST'>
+    <div class="row">
+      <h1>Add Meal</h1>
+      <div class="input-group input-group-icon">
+        <h4 for='name'>Meal Name</h4>
+        <input type='text' id='name' name='name'required />
+        <div class="input-icon"><i class="fa fa-user"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <h4 for='date'>Date</h4>
+          <input type='date' min="2021-01-01" max="2021-12-31" id='date' name='date' required />
+        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <h4 for='time'>Time</h4>
+          <input type='time' id='time' name='time' required />
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+       <div class="input-group input-group-icon">
+        <h4 for='type'>Meal Type</h4>
+          <select id='type' name='type' required>
+            <option value='Breakfast'>Breakfast</option>
+            <option value='Lunch'>Lunch</option>
+            <option value='Snack'>Snack</option>
+            <option value='Dinner'>Dinner</option>
+          </select>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+       <div class="input-group input-group-icon">
+        <h4 for='number'>Calories</h4>
+          <input type='number' min="1" max="5000" id='calories' name='calories' required />
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+      <div  id="button-wrapper" class="loader-wrapper"></div>>
+         <button type="submit" class="submit btn btn-primary"  >Create</button>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+    
+    </div>
+    </div>
+  </form>
+</div>

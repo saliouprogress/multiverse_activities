@@ -1,0 +1,13 @@
+extends searchLayout
+
+block content
+  h3(class='searchResultsHeader')= categoryName
+  ul(id='listOfGroup') 
+    if itemList 
+      each item in itemList
+        li
+          a(href='/item/' + item.fdcId) #{item.description}
+    else
+      h5 The item you searched could not be found.
+
+

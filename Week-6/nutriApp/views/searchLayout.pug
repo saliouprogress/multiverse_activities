@@ -1,0 +1,17 @@
+extends layout
+
+block mainDisplay
+  form(method='get' action='/search/results')
+    div(id='searchBar')
+      div(id='searchBox')
+        label(for='query') Search
+        input(type='text' name='query' id='query' placeholder='food item')
+      div(id='searchButtons')
+        label(for='db')
+        select(name='db' id='db')
+          option(value='SR') by Food Group
+          option(value='Foundation') by Store Brand
+        button(id='searchSubmit' type='submit') Submit
+  block content
+
+      

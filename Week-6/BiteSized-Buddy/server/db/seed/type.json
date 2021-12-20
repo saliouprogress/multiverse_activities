@@ -1,0 +1,8 @@
+{
+    "types": [
+        {   "name": "Breakfast" },
+        {   "name": "Lunch"},
+        {   "name": "Snack"},
+        {   "name": "Dinner"}
+    ]
+}

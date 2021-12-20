@@ -1,0 +1,49 @@
+<div class='allMealsSection'>
+    <div> 
+        <h1 style="padding-bottom 80px;text-align:center; color:#f0a500" >Entry List</h1>
+    </div>
+    <div class="Filters">
+        <div class="dropdown">
+            <button class="dropbtn">Filter By Type</button>
+            <div class="dropdown-content">
+                <a href="/meals/type/Breakfast/{{user.id}}">Breakfast</a>
+                <a href="/meals/type/Lunch/{{user.id}}">Lunch</a>
+                <a href="/meals/type/Snack/{{user.id}}">Snack</a>
+                <a href="/meals/type/Dinner/{{user.id}}">Dinner</a>
+            </div>
+        </div>
+         <div class="calorieDiv">
+            <form class="calorieForm" action="/meals/filter/calories/{{user.id}}" method='POST'> 
+            <label style="width: 200px; height:40px;" for="calories">Filter by Calories:</label><br>
+            <input style="width: 200px; height:40px;" type="calories" id="caloriesInput" name="calories"><br>
+            <input style="width: 200px; height:40px; line-height:0.5;" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="item-container">
+        {{#each meals}}
+             <div class ="itemList">
+                 <ul class="item">
+                <li>
+                        <img data="{{this.id}}" class="deleteImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIC8eSdgx4Kp-9bwEDpGwEKciwlQnT1eR7Tg&usqp=CAU" 
+                        style="width:32px;height:32px;">
+                </li>
+                <li style="font-size:26px; margin-left:25px; width:320px;">{{this.date}} </li>
+                <li style="font-size:26px; margin-left:25px; width:320px;">{{this.name}} </li>
+                <li style="font-size:26px; margin-left:100px;">Calories: {{this.calories}}</li>
+                <li style="margin-left:25px;">
+                    <a href="/meal/{{this.id}}/edit">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpe4sLGj2vPheJSm1RnUDbrVL6EcEGs54tYQ&usqp=CAU"
+                        style="width:60px;height:43px;">
+                    </a>
+                </li>
+                </ul>
+            </div>
+        {{/each}}
+    </div>  
+      
+ </div>    
+<script src='/scripts/allEntries.js'></script>

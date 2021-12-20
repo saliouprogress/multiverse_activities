@@ -1,0 +1,89 @@
+<style>
+      .dark, 
+      .dark * {
+        background-color: blue;
+        color: white;
+        border-color: #e6e6e6;
+      }
+      .switch {
+          align-self: flex-end;
+          margin: 0.9375rem;
+      }
+      .inner-switch {
+          display: inline-block;
+          cursor: pointer;
+          border: 1px solid #555;
+          border-radius: 1.25rem;
+          width: 3.125rem;
+          text-align: center;
+          font-size: 1rem;
+          padding: 0.1875rem;
+          margin-left: 0.3125rem;
+      }
+    </style>
+
+
+ <div class="switch">Dark mode:              
+    <span class="inner-switch">OFF</span>
+  </div>
+
+<div class="container" >
+ 
+  {{#with meal}}
+  <form action='/api/updateMeal/{{id}}' method='POST'>
+    <div class="row">
+      <h1>Update Meal</h1>
+      <div class="input-group input-group-icon">
+        <h4 for='name'>Meal Name</h4>
+        <input type='text' id='name' name='name' value="{{name}}" required />
+        <div class="input-icon"><i class="fa fa-user"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <h4 for='date'>Date</h4>
+          <input type='date' min="2021-01-01" max="2021-12-31" id='date' name='date' value="{{date}}" required />
+        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <h4 for='time'>Time</h4>
+          <input type='time' id='time' name='time' value="{{time}}" required />
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+       <div class="input-group input-group-icon">
+        <h4 for='type'>Meal Type</h4>
+          <select id='type' name='type' value="{{type}}" required>
+            <option value='Breakfast'>Breakfast</option>
+            <option value='Lunch'>Lunch</option>
+            <option value='Snack'>Snack</option>
+            <option value='Dinner'>Dinner</option>
+          </select>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+       <div class="input-group input-group-icon">
+        <h4 for='number'>Calories</h4>
+          <input type='number' min="1" max="5000" id='calories' name='calories' value="{{calories}}" required />
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+      <div  id="button-wrapper" class="loader-wrapper"></div>
+         <button type="submit" class="submit btn btn-primary"  >Update</button>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+    
+    </div>
+    </div>
+  </form>
+  {{/with}}
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script >
+        $( ".inner-switch" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+              $( "body" ).removeClass( "dark" );
+              $( ".inner-switch" ).text( "OFF" );
+            } else {
+              $( "body" ).addClass( "dark" );
+              $( ".inner-switch" ).text( "ON" );
+            }
+        });
+        
+    </script>
+</body>

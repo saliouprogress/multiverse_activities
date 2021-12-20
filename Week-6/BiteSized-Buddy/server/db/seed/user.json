@@ -1,0 +1,8 @@
+{
+    "users": [
+        {"name": "Jorge Flores", "email": "jorge@bitesized-buddy.com", "password": "bitesized", "age": "20", "avatar": "https://i.ibb.co/vQZBWnv/Screenshot-2021-12-15-11-31-02-AM.png" },
+        {"name": "Denille Carrington", "email": "denille@bitesized-buddy.com", "password": "bitesized", "age": "21", "avatar": "https://i.ibb.co/vQZBWnv/Screenshot-2021-12-15-11-31-02-AM.png" },
+        {"name": "Lucas Freitas", "email": "lucas@bitesized-buddy.com", "password": "bitesized", "age": "22", "avatar": "https://i.ibb.co/vQZBWnv/Screenshot-2021-12-15-11-31-02-AM.png" },
+        {"name": "Mamadou Diallo", "email": "mamadou@bitesized-buddy.com", "password": "bitesized", "age": "23", "avatar": "https://i.ibb.co/vQZBWnv/Screenshot-2021-12-15-11-31-02-AM.png" }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "meals": [
+
+        {   "name": "Scambled Eggs",            "date": "2021-12-16", "time": "08:15", "calories": 300 , "userId": 1, "type":  "Breakfast" },
+        {   "name": "Pancakes",                 "date": "2021-12-16", "time": "09:30", "calories": 600 , "userId": 2, "type":  "Breakfast"  },
+        {   "name": "Pizza",                    "date": "2021-12-16", "time": "12:30", "calories": 600, "userId": 1, "type":  "Lunch"  },
+        {   "name": "Pasta",                    "date": "2021-12-16", "time": "13:05", "calories": 500, "userId": 2, "type":  "Lunch"  },
+        {   "name": "Dark Chocolate",           "date": "2021-12-16", "time": "15:45", "calories": 300, "userId": 2, "type":  "Snack"  },
+        {   "name": "Beef Lasagna",             "date": "2021-12-16", "time": "20:15", "calories": 600, "userId": 2, "type":  "Dinner"  },
+
+        {   "name": "American Pancakes",        "date": "2021-12-15", "time": "8:05", "calories": 250, "userId": 1, "type":  "Breakfast"  },
+        {   "name": "Sausage Bean & bacon",     "date": "2021-12-15", "time": "07:50", "calories": 250, "userId": 2, "type":  "Breakfast"  },
+        {   "name": "Chiken Salad Sandwich",    "date": "2021-12-15", "time": "13:30", "calories": 700, "userId": 1, "type":  "Lunch"  },
+        {   "name": "Panera Squash Soup",       "date": "2021-12-15", "time": "14:05", "calories": 800, "userId": 2, "type":  "Lunch"  },
+        {   "name": "Fruit Smoothie",           "date": "2021-12-15", "time": "15:41", "calories": 300, "userId": 2, "type":  "Snack"  },
+        {   "name": "Easy Fried Rice",          "date": "2021-12-15", "time": "20:50", "calories": 900, "userId": 1, "type":  "Dinner"  },
+        {   "name": "Classic Shepered Rice",    "date": "2021-12-15", "time": "20:30", "calories": 870, "userId": 2, "type":  "Dinner"  },
+
+        {   "name": "Hash Browns with Gruyere", "date": "2021-12-14", "time": "6:00", "calories": 275, "userId": 1, "type":  "Breakfast"  },
+        {   "name": "Spicy Moroccan Eggs",      "date": "2021-12-14", "time": "7:05", "calories": 250, "userId": 2, "type":  "Breakfast"  },
+        {   "name": "Buddha Bowls",             "date": "2021-12-14", "time": "12:30", "calories": 700, "userId": 1, "type":  "Lunch"  },
+        {   "name": "Ham Sandwich",             "date": "2021-12-14", "time": "15:05", "calories": 800, "userId": 2, "type":  "Lunch"  },
+        {   "name": "Sweet Bagel Chips",        "date": "2021-12-14", "time": "16:40", "calories": 300, "userId": 2, "type":  "Snack"  },
+        {   "name": "Thie Beef Salad",          "date": "2021-12-14", "time": "21:50", "calories": 900, "userId": 1, "type":  "Dinner"  },
+        {   "name": "CCurried Sausages",        "date": "2021-12-14", "time": "22:30", "calories": 840, "userId": 2, "type":  "Dinner"  },
+
+        {   "name": "Avocado, Toast & Chorizo", "date": "2021-12-13", "time": "7:30", "calories": 230, "userId": 1, "type":  "Breakfast"  },
+        {   "name": "Oven-baked Egg & Chips",   "date": "2021-12-13", "time": "10:05", "calories": 300, "userId": 2, "type":  "Breakfast"  },
+        {   "name": "Chiken Salad Sandwich",    "date": "2021-12-13", "time": "13:30", "calories": 700, "userId": 1, "type":  "Lunch"  },
+        {   "name": "Panera Squash Soup",       "date": "2021-12-13", "time": "14:05", "calories": 800, "userId": 2, "type":  "Lunch"  },
+        {   "name": "Garlic Bagel Chips",       "date": "2021-12-13", "time": "16:35", "calories": 300, "userId": 2, "type":  "Snack"  },
+        {   "name": "Pea & Ham Soup",           "date": "2021-12-13", "time": "19:30", "calories": 900, "userId": 1, "type":  "Dinner"  },
+        {   "name": "Classic Shepered Rice",    "date": "2021-12-13", "time": "20:10", "calories": 970, "userId": 2, "type":  "Dinner"  },
+
+        {   "name": "Parship Hash Browns",      "date": "2021-12-12", "time": "7:20", "calories": 230, "userId": 1, "type":  "Breakfast"  },
+        {   "name": "Full English Potato Cake", "date": "2021-12-12", "time": "10:30", "calories": 390, "userId": 2, "type":  "Breakfast"  },
+        {   "name": "Split Pea Soup",           "date": "2021-12-12", "time": "13:30", "calories": 1000, "userId": 1, "type":  "Lunch"  },
+        {   "name": "Grilled Chiken Salad",     "date": "2021-12-12", "time": "14:05", "calories": 900, "userId": 2, "type":  "Lunch"  },
+        {   "name": "Fruit Smoothie",           "date": "2021-12-12", "time": "15:41", "calories": 300, "userId": 2, "type":  "Snack"  },
+        {   "name": "Spaguetti Bolognese",      "date": "2021-12-12", "time": "21:00", "calories": 900, "userId": 1, "type":  "Dinner"  },
+        {   "name": "Potato & Leek Soup",       "date": "2021-12-12", "time": "21:20", "calories": 770, "userId": 2, "type":  "Dinner"  },
+
+        {   "name": "Sausage, Egg,Tomato",      "date": "2021-12-11", "time": "7:00", "calories": 230, "userId": 1, "type":  "Breakfast"  },
+        {   "name": "Oven-baked Egg & Chips",   "date": "2021-12-11", "time": "8:25", "calories": 190, "userId": 2, "type":  "Breakfast"  },
+        {   "name": "Wendy's Cilly",            "date": "2021-12-11", "time": "13:30", "calories": 700, "userId": 1, "type":  "Lunch"  },
+        {   "name": "Tuna Melt",                "date": "2021-12-11", "time": "14:05", "calories": 800, "userId": 2, "type":  "Lunch"  },
+        {   "name": "Garlic Bagel Chips",       "date": "2021-12-11", "time": "16:35", "calories": 300, "userId": 2, "type":  "Snack"  },
+        {   "name": "Beef Nachos",              "date": "2021-12-11", "time": "20:06", "calories": 900, "userId": 1, "type":  "Dinner"  },
+        {   "name": "Minestrone Soup",          "date": "2021-12-11", "time": "21:50", "calories": 870, "userId": 2, "type":  "Dinner"  },
+
+        {   "name": "Spinach Baked Eggs",       "date": "2021-12-10", "time": "9:30", "calories": 240, "userId": 1, "type":  "Breakfast"  },
+        {   "name": "Oven-baked Egg & Chips",   "date": "2021-12-10", "time": "11:05", "calories": 400, "userId": 2, "type":  "Breakfast"  },
+        {   "name": "Chiken Mandarin Salad",    "date": "2021-12-10", "time": "13:30", "calories": 500, "userId": 1, "type":  "Lunch"  },
+        {   "name": "Skinny Burrito Bowl",      "date": "2021-12-10", "time": "14:05", "calories": 770, "userId": 2, "type":  "Lunch"  },
+        {   "name": "Caramel Popcorn",          "date": "2021-12-10", "time": "16:30", "calories": 300, "userId": 2, "type":  "Snack"  },
+        {   "name": "Beef Stroganof",           "date": "2021-12-10", "time": "18:50", "calories": 700, "userId": 1, "type":  "Dinner"  },
+        {   "name": "Classic Shepered Rice",    "date": "2021-12-10", "time": "19:30", "calories": 870, "userId": 2, "type":  "Dinner"  }
+    ]
+
+
+}

@@ -1,0 +1,27 @@
+{
+  "name": "bitesized-buddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:report": "jest --coverage=true",
+    "seed": "node ./server/db/seed.js",
+    "dev": "nodemon ./server/app.js",
+    "start": "node ./server/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "express-validator": "^6.14.0",
+    "handlebars": "^4.7.7",
+    "jest": "^27.4.4",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.12.0-beta.3",
+    "sqlite3": "^5.0.2"
+  }
+}

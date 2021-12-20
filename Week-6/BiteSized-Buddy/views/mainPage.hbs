@@ -1,0 +1,89 @@
+<section id='mainPage'>
+  <div id='userInfo'>
+    <h2>Hello, {{name}}!</h2>
+    <img id='userImage' src='{{avatar}}' />
+    <div id='dropDown' class='dropDownContent'>
+      <img class='userImage' src='https://i.ibb.co/vQZBWnv/Screenshot-2021-12-15-11-31-02-AM.png' />
+      <img class='userImage' src='https://i.ibb.co/k9q8r2Y/Screenshot-2021-12-15-11-31-23-AM.png' />
+      <img class='userImage' src='https://i.ibb.co/LPHnx9z/Screenshot-2021-12-15-11-31-34-AM.png' />
+      <img class='userImage' src='https://i.ibb.co/5W7RFBh/Screenshot-2021-12-15-11-31-49-AM.png' />
+      <img class='userImage' src='https://i.ibb.co/nbKmDpS/Screenshot-2021-12-15-11-32-06-AM.png' />
+    </div>
+  </div>
+  <article>
+    <h4>Today's Summary ({{date}})</h4>
+    <div id='calorieInfoContainer'>
+      <div id='totalCalories'>
+        <div id='numberCalories'>
+          <p>Total Calories:</p>
+          <p id='userCalories'><span>{{total}}</span> | 1800</p>
+        </div>
+        <div id='calorieVisual'>
+          <canvas id='dougnutChart'></canvas>
+        </div>
+      </div>
+      <div id='barChartContainer'>
+        <canvas id='barChart'></canvas>
+      </div>
+    </div>
+    <div id='mealInfoContainer'>
+      <p>Today's Meals</p>
+      <div id='typeContainer'>
+        {{#if breakfast}}
+          <div id='breakfastContainer' class='typeContainer'>
+            <h6>Breakfast</h6>
+            <ul class='typeList'>
+              {{#each breakfast}}
+                <li>
+                  <p>{{this.name}}</p>
+                  <p>{{this.calories}}</p>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
+        {{#if lunch}}
+          <div id='lunchContainer' class='typeContainer'>
+            <h6>Lunch</h6>
+            <ul class='typeList'>
+              {{#each lunch}}
+                <li>
+                  <p>{{this.name}}</p>
+                  <p>{{this.calories}}</p>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
+        {{#if snack}}
+          <div id='snackContainer' class='typeContainer'>
+            <h6>Snacks</h6>
+            <ul class='typeList'>
+              {{#each snack}}
+                <li>
+                  <p>{{this.name}}</p>
+                  <p>{{this.calories}}</p>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
+        {{#if dinner}}
+          <div id='dinnerContainer' class='typeContainer'>
+            <h6>Dinner</h6>
+            <ul class='typeList'>
+              {{#each dinner}}
+                <li>
+                  <p>{{this.name}}</p>
+                  <p>{{this.calories}}</p>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </article>
+</section>
+<script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+<script src='/scripts/mainPage.js'></script>

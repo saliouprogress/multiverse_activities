@@ -1,0 +1,52 @@
+
+
+#addMealSection{
+  padding-top: 50px;
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#addMealFormList{
+  list-style-type: none;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+.AddMealListItem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.labelInput{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+#dateTime, #typeCalories{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.groupRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#formButtons{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px
+}
+
+#resetButton{
+  width: 100px;
+  margin-bottom: 15px
+}

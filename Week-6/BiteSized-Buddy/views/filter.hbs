@@ -1,0 +1,45 @@
+<section id='allMealsSection'>
+    <div> 
+        <h1 style="padding-bottom 80px;text-align:center">Entries</h1>
+    </div>
+    <div class="dropdownTypeFilter">
+        <button class="dropbtn">Filter By Type</button>
+        <div class="dropdown-content">
+            <a href="/meals/type/Breakfast">Breakfast</a>
+            <a href="/meals/type/Lunch">Lunch</a>
+            <a href="/meals/type/Snack">Snack</a>
+            <a href="/meals/type/Dinner">Dinner</a>
+        </div>
+    </div>
+        <div>
+            <form action="meals/filter/type/:calories"
+            <label for="calories">Calories:</label><br>
+            <input type="calories" id="calories" name="calories" value=""><br>
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+</div>
+    <div class="item-container";>
+            <ul class="image-list">
+                {{#each meals}}
+                <li>
+                        <img data="{{this.id}}" class="deleteImage" src="https://icon-library.com/images/android-trash-can-icon/android-trash-can-icon-5.jpg" 
+                        style="width:32px;height:32px;">
+                </li>
+                <li style="font-size:26px; margin-left:25px;">{{this.name}} </li>
+                <li style="font-size:26px; margin-left:200px;">Calories: {{this.calories}}</li>
+                <li>
+                    <a href="/meal/{{this.id}}/edit">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/12/Pencil-icon-vector-EPS-10-by-Hoeda80-5-580x386.jpg"
+                        style="width:70px;height:50px;">
+                    </a>
+                </li>
+                 {{/each}}
+            </ul>
+    </div>
+        
+</section>
+   
+<script src='/scripts/allEntries.js'></script>
