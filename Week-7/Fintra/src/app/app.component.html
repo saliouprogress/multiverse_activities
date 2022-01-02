@@ -1,9 +1,25 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/accounts">Accounts</a>
-  <a routerLink="/accounts">Login</a>
-  <a routerLink="/accounts">About</a>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+
+<!-- main app container -->
+<div class="jumbotron">
+  <div class="container">
+      <h1>{{title}}</h1>
+      <nav>
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/accounts">Accounts</a>
+        <a routerLink="/login">Login</a>
+        <a routerLink="/signup">Signup</a>
+        <a routerLink="/user">User</a>      
+        <a routerLink="/dynamic">Dynamic Form</a>      
+      </nav>
+      <div class="col-sm-8 col-sm-offset-2">
+          <alert></alert>
+          <router-outlet></router-outlet>
+          <app-messages></app-messages>
+      </div>
+
+      <div>
+        <h2>Job Application for Heroes</h2>
+        <app-dynamic-form [questions]="questions$ | async"></app-dynamic-form>
+      </div>
+  </div> 
+</div>

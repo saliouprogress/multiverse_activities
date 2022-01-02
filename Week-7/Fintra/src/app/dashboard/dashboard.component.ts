@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Account } from '../account';
-import { AccountService } from '../account.service';
+import { Account } from '../_models/account';
+import { AccountService } from '../_services/account.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -18,6 +18,6 @@ export class DashboardComponent implements OnInit {
 
   getAccounts(): void {
     this.accountService.getAccounts()
-      .subscribe(accounts => this.accounts = accounts.slice(1, 5));
+      .subscribe(accounts => this.accounts = accounts.slice(1, 10));
   }
 }

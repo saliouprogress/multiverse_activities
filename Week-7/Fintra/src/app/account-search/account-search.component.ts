@@ -6,8 +6,8 @@ import {
    debounceTime, distinctUntilChanged, switchMap
  } from 'rxjs/operators';
 
-import { Account } from '../account';
-import { AccountService } from '../account.service';
+import { Account } from '../_models/account';
+import { AccountService } from '../_services/account.service';
 
 @Component({
   selector: 'app-account-search',

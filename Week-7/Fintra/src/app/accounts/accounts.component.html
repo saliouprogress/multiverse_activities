@@ -1,21 +1,28 @@
-<h2>My Accounts</h2>
-
-<div>
-  <label for="new-account">Account name: </label>
-  <input id="new-account" #accountName />
-
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button class="add-button" (click)="add(accountName.value); accountName.value=''">
-    Add Account
-  </button>
+<div class="container">
+  <div class="row m-0">
+    <h2>My Accounts</h2>
+  </div>
+  <div class="row">
+    <ul class="accounts">
+        <li *ngFor="let account of accounts">
+          <div class="row" routerLink="/detail/{{account.id}}" >
+            <div class="row box-right">
+                <div class="col-md-8 ps-0 ">
+                    <p class="ps-3 textmuted fw-bold h6 mb-0">{{account.name}}</p>
+                    <p class="h1 fw-bold d-flex"> <span class=" fas fa-dollar-sign textmuted pe-1 h6 align-text-top mt-1">
+                    Credit Limit </span>{{account.creditLimit}}</p>
+                    <p class="ms-3 px-2 bg-green"><span>Annual Percentage rate </span>{{account.currentAPR}}</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="p-blue"> <span class="fas fa-circle pe-2">Card Issuer </span>{{account.issuer}}</p>
+                    <p class="fw-bold mb-3"><span class="fas fa-dollar-sign pe-1">Expiration Date </span>{{account.expirationDate}}</p>
+                    <p class="p-org"><span class="fas fa-circle pe-2">Avaailable Credit </span>{{account.availableCredit}} </p>
+                    <p class="fw-bold">Issuer Type <span class="fas fa-dollar-sign pe-1">{{account.issuerType}} </span>00<span class="textmuted">.00</span></p>
+                </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+  </div>
 </div>
 
-<ul class="accounts">
-  <li *ngFor="let account of accounts">
-    <a routerLink="/detail/{{account.id}}">
-      <span class="badge">{{account.id}}</span> {{account.name}}
-    </a>
-    <button class="delete" title="delete account"
-      (click)="delete(account)">x</button>
-  </li>
-</ul>

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { Account } from '../account';
-import { AccountService } from '../account.service';
+import { Account } from '../_models/account';
+import { AccountService } from '../_services/account.service';
 
 @Component({
   selector: 'app-account-detail',
@@ -32,7 +32,6 @@ export class AccountDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
-
   save(): void {
     if (this.account) {
       this.accountService.updateAccount(this.account)

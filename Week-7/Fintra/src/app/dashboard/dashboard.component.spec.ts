@@ -3,8 +3,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { of } from 'rxjs';
 
 import { AccountSearchComponent } from '../account-search/account-search.component';
-import { AccountService } from '../account.service';
-import { ACCOUNTS } from '../mock-accounts';
+import { AccountService } from '../_services/account.service';
+import { ACCOUNTS } from '../mock-logins';
 
 import { DashboardComponent } from './dashboard.component';
 

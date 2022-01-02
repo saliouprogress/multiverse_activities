@@ -1,14 +1,96 @@
-<div *ngIf="account">
-  <h2>{{account.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{account.id}}</div>
-  <div>
-    <label for="account-name">Account Name: </label>
-    <input id="account-name" [(ngModel)]="account.name" placeholder="Account name"/>
+<div class="container">
+  <div *ngIf="account" class="row">
+    <h2>{{account.name | uppercase}} Details</h2>
+    <!-- <div>
+      <span>id: </span>{{account.id}}
+    </div> -->
+    <div class="input-group input-group-icon">
+      <label for="account-name">Name: </label>
+      <input id="account-name" [(ngModel)]="account.name" placeholder="Account name" />
+    </div>
+    <div class="input-group input-group-icon">
+      <label for="account-type">Type: </label>
+      <input id="account-type" [(ngModel)]="account.type" placeholder="Account type" />
+    </div>
+    <div class="input-group input-group-icon">
+      <label for="account-issuer">Issuer: </label>
+      <input id="account-issuer" [(ngModel)]="account.issuer" placeholder="Account type" />
+    </div>
+    <div class="input-group input-group-icon">
+      <label for="account-issuerType">Issuer Type: </label>
+      <input id="account-issuerType" [(ngModel)]="account.issuerType" placeholder="Account issuerType" />
+    </div>
+    <div class="input-group input-group-icon">
+      <label for="account-expirationDate">Expiration Date: </label>
+      <input id="account-expirationDate" [(ngModel)]="account.expirationDate" placeholder="Account expirationDate" />
+    </div>
+    <div class="input-group input-group-icon">
+      <label for="account-creditLimit">Credit Limit: </label>
+      <input id="account-creditLimit" [(ngModel)]="account.creditLimit" placeholder="Account creditLimit" />
+    </div>
+    <div class="input-group input-group-icon">
+      <label for="account-availableCredit">Available Credit: </label>
+      <input id="account-issuerType" [(ngModel)]="account.availableCredit" placeholder="Account availableCredit" />
+    </div>
+    <div class="input-group input-group-icon">
+      <label for="account-currentAPR">Annual Percentage Rate: </label>
+      <input id="account-currentAPR" [(ngModel)]="account.currentAPR" placeholder="Account currentAPR" />
+    </div>
+    <div>
+
+      <div  id="button-wrapper" class="loader-wrapper">
+         <button  (click)="save()" class="submit btn btn-primary"  >Save</button>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+    </div>
+    <button (click)="goBack()">go back</button>
   </div>
-  <div>
-    <label for="account-type">Account Type: </label>
-    <input id="account-type" [(ngModel)]="account.type" placeholder="Account type"/>
-  </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
 </div>
+
+<!-- <div class="container" >
+  <form action='/api/updateMeal/{{id}}' method='POST'>
+    <div class="row">
+      <h1>Update Meal</h1>
+      <div class="input-group input-group-icon">
+        <h4 for='name'>Meal Name</h4>
+        <input type='text' id='name' name='name' value="{{name}}" required />
+        <div class="input-icon">
+          <i class="fa fa-user"></i>
+        </div>
+      </div>
+      <div class="input-group input-group-icon">
+        <h4 for='date'>Date</h4>
+          <input type='date' min="2021-01-01" max="2021-12-31" id='date' name='date' value="{{date}}" required />
+        <div class="input-icon">
+          <i class="fa fa-envelope"></i>
+        </div>
+      </div>
+      <div class="input-group input-group-icon">
+        <h4 for='time'>Time</h4>
+          <input type='time' id='time' name='time' value="{{time}}" required />
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+       <div class="input-group input-group-icon">
+        <h4 for='type'>Meal Type</h4>
+          <select id='type' name='type' value="{{type}}" required>
+            <option value='Breakfast'>Breakfast</option>
+            <option value='Lunch'>Lunch</option>
+            <option value='Snack'>Snack</option>
+            <option value='Dinner'>Dinner</option>
+          </select>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+       <div class="input-group input-group-icon">
+        <h4 for='number'>Calories</h4>
+          <input type='number' min="1" max="5000" id='calories' name='calories' value="{{calories}}" required />
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+      <div  id="button-wrapper" class="loader-wrapper"></div>
+         <button type="submit" class="submit btn btn-primary"  >Update</button>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+    
+    </div>
+    </div>
+  </form>
+</div> -->
