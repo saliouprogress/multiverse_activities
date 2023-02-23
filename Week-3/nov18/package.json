@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "jest": "^27.4.0",
-    "sequelize": "^6.12.0-alpha.1",
+    "sequelize": "^7.0.0-alpha.1",
     "sqlite3": "^4.2.0"
   }
 }
