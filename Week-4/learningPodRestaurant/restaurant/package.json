@@ -16,7 +16,7 @@
     "handlebars": "^4.7.7",
     "jest": "^27.4.0",
     "nodemon": "^2.0.15",
-    "sequelize": "^6.12.0-alpha.1",
+    "sequelize": "^7.0.0-alpha.1",
     "sqlite3": "^5.0.2"
   }
 }
